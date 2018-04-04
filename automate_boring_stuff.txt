@@ -1,0 +1,39 @@
+gmail login:
+  see gmail_login.py
+
+Misc browser stuff:
+browser.back()
+browser.forward()
+browser.refresh()
+
+
+reading data from webpage
+ elem = type xpath here
+ elem.text
+ elem.get_attribute('href')
+
+ To get all attributes
+  elem.get_attributes()    # this might/might not work
+
+
+
+PyAutoGUI:
+  Control mouse and keyboard
+    Mouse control:
+      pyautogui.click()
+      pyautogui.click([x,y])
+      pyautogui.doubleClick()
+      pyautogui.rightClick()
+      pyautogui.moveTo(x,y[,duration=seconds])
+      pyautogui.moveRel(x_offset, y_offset[,duration=seconds])
+      pyautogui.dragTo(x,y[,duration=seconds])
+      pyautogui.position()   # returns (x, y) tuple
+      pyautogui.size()     # returns (width, height) tuple
+      pyautogui.displayMousePosition()
+
+
+    Keyboard Control:
+      pyautogui.typewrite('Text goes here.'[,interval=secs])
+      pyautogui.press('pageup')
+      pyautogui.KEYBOARD_KEYS
+      pyautogui.hotkey('ctrl', 'o')

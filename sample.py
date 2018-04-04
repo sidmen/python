@@ -12,7 +12,8 @@
 #################################################################
 #                          FUNCTIONS                            #
 #################################################################
-
+def fn(required, not_mandatory = 0): #arg with '=' is not mandatory
+    x = required + not_mandatory
 
 def calc(i):
     # i = '2'
