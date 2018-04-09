@@ -5,6 +5,12 @@ import time
 import pdb
 import sys
 
+
+user_name = raw_input("username: ")
+password = raw_input("password: ")
+to_list = raw_input("to: ")
+
+
 ###
 def gmail_login(username, pwd, recipients):
     # pdb.Pdb(stdout=sys.__stdout__).set_trace()
@@ -23,7 +29,7 @@ def gmail_login(username, pwd, recipients):
     compose = browser.find_element_by_xpath('//div[contains(text(),"COMPOSE")]')
     compose.click()
     time.sleep(10)
-    to = browser.find_element_by_xpath('//*[@name="to"]')   
+    to = browser.find_element_by_xpath('//*[@name="to"]')
     to.send_keys(recipients)
     time.sleep(5)
 
