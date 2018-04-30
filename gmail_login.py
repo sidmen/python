@@ -1,14 +1,14 @@
 from selenium import webdriver
-from password import *
+# from password import *
 import time
 # python debugger:
 import pdb
 import sys
 
 
-user_name = raw_input("username: ")
-password = raw_input("password: ")
-to_list = raw_input("to: ")
+# user_name = raw_input("username: ")
+# password = raw_input("password: ")
+# to_list = raw_input("to: ")
 
 
 ###
@@ -34,4 +34,4 @@ def gmail_login(username, pwd, recipients):
     time.sleep(5)
 
 if __name__ == "__main__":
-    gmail_login(user_name, password, to_list)
+    gmail_login('user_name', 'password', 'to_list')

@@ -1,5 +1,0 @@
----
- key1:
-   key2: 3
-   key3:
-     fizz: "\x5c\x22buzz\x5c\x22"
