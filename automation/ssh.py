@@ -9,9 +9,9 @@ import getpass
 try:
     s = pxssh.pxssh()
     hostname = raw_input("hostname: ")
-    username = os.environ.get('SSO_USERNAME')
+    username = os.environ['SSO_USERNAME']
     # password = getpass.getpass("password: ")
-    password = os.environ.get('SSO_PASSWORD')
+    password = os.environ['SSO_PASSWORD']
     cmd = raw_input("command: ")
     s.login(hostname, username, password)
     s.sendline(cmd)

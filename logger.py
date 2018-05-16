@@ -1,12 +1,8 @@
 import logging
 
-#Create and configure logger
-LOG_FORMAT = "%(levelname)s %(asctime)s - %(message)s"
-logging.basicConfig(filename = "C:\\Users\\spoonath\\Documents\\MISC\\python_scripts\\my_git_python\\python\\python.log",
-                    level = logging.DEBUG,
-                    format = LOG_FORMAT,
-                    filemode = 'w' # to overwrite old logs
-                    )
-logger = logging.getLogger()
-
-logger.info("Our first message")
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+formatter = logging.Formatter('%(levelname)s : %(name)s : %(asctime)s - %(message)s')
+file_handler = logging.FileHandler('python.log')
+file_handler.setFormatter(formatter)
+logger.addHandler(file_handler)

@@ -21,6 +21,10 @@ elif module == "terraform":
     new_dir = "C:/Users/spoonath/Documents/MISC/Terraform_POC/Terraform"
 elif module == "automation":
     new_dir = "C:/Users/spoonath/Documents/MISC/python_scripts/my_git_python/python/automation"
+elif module == "data":
+    new_dir = "C:/Users/spoonath/Documents/MISC/data_science_using_python"
+elif module == "blackbox":
+    new_dir = "C:/Users/spoonath/git/puppet/shoretel_blackbox" 
 else:
     new_dir = "C:/Users/spoonath/git/puppet/shoretel_cosmo_" + module
 os.chdir(new_dir)

@@ -1,6 +1,7 @@
 import pyautogui
 from selenium import webdriver
 import time
+import os
 
 
 def vcenter_login(username, password):
@@ -13,7 +14,9 @@ def vcenter_login(username, password):
     password_xpath.send_keys(password)
     # time.sleep(2)
     pyautogui.typewrite(["enter"])
-    time.sleep(1000)
+    time.sleep(100000000000)
 
 
-vcenter_login('admin.spoonath@corvisa.com', 'moped-2NA/Xp')
+login_user = os.environ['VCENTER_USERNAME']
+login_password = os.environ['VCENTER_PASSWORD']
+vcenter_login(login_user, login_password)

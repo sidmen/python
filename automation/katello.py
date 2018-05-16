@@ -15,9 +15,10 @@ def katello_login(username, password):
     time.sleep(2)
     login_xpath.click()
     # pyautogui.typewrite(["enter"])
-    time.sleep(1000)
+    time.sleep(100000000000)
 
 
-login_user = os.environ.get('SSO_USERNAME')
-login_password = os.environ.get('SSO_PASSWORD')
+login_user = os.environ['SSO_USERNAME']
+login_password = os.environ['SSO_PASSWORD']
+
 katello_login(login_user, login_password)
