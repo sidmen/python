@@ -21,4 +21,4 @@ def write_todos(todos_arg, filepath=FILEPATH):  # non-default values to be calle
 # help(write_todos)
 
 if __name__ == "__main__":
-    print("you ran the myfunctions script directly")
+    print("you ran the backend script directly")
